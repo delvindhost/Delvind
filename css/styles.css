@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,22 +6,17 @@ body {
     background-color: #000000;
 }
 
-
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #000000;
-    
-    
-    
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: #1009e0;
+    background-color: #000000;
 }
 
 main {
@@ -36,10 +32,60 @@ main {
 }
 
 .header-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove qualquer espaço em branco abaixo da imagem */
+    margin: 0; /* Centraliza a imagem, caso ela tenha margens definidas */
+   
+    
 }
+
+/* Media Queries para ajustes adicionais */
+@media (max-width: 1024px) {
+    .header-image {
+        /* Ajustes adicionais para telas de até 1024px, se necessário */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-image {
+        /* Ajustes adicionais para telas de até 768px, se necessário */
+        max-width: 105vw;
+        width: 105vw;
+        position: flex;
+        object-fit: cover;
+        
+
+    }
+}
+
+@media (max-width: 480px) {
+    .header-image {
+        /* Ajustes adicionais para telas de até 480px, se necessário */
+    }
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de até 768px (tablets e dispositivos móveis em paisagem) */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+}
+
+/* Para telas de até 480px (smartphones em retrato) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Ajuste do tamanho da fonte para telas menores */
+    }
+
+    .hero-section {
+        padding: 10px; /* Adiciona espaçamento interno para melhor visualização */
+    }
+}
+
 
 
 
@@ -222,6 +268,91 @@ main {
     animation: typing 4s steps(40, end) forwards; /* Alterado para remover o cursor */
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .typing-effect {
+        position: absolute; /* Garante que podemos usar top, left, etc. */
+        top: 30%; /* Ajusta a posição vertical */
+        left: 100%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -50%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect {
+        font-size: 1em; /* Reduz o tamanho da fonte em telas menores */
+        line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-effect {
+        top: 20%; /* Ajusta a posição vertical para telas menores */
+        left: 50%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -20%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect h1 {
+        font-size: 2em; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+        line-height: 1.2; /* Ajusta a altura da linha */
+    }
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .typing-effect1 {
+        position: absolute; /* Garante que podemos usar top, left, etc. */
+        top: 30%; /* Ajusta a posição vertical */
+        left: 100%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -50%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect1 {
+        font-size: 1em; /* Reduz o tamanho da fonte em telas menores */
+        line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-effect1 {
+        top: 20%; /* Ajusta a posição vertical para telas menores */
+        left: 50%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -20%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect1 h1 {
+        font-size: 2em; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+        line-height: 1.2; /* Ajusta a altura da linha */
+    }
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .typing-effect2 {
+        position: absolute; /* Garante que podemos usar top, left, etc. */
+        top: 30%; /* Ajusta a posição vertical */
+        left: 100%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -50%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect2 {
+        font-size: 1em; /* Reduz o tamanho da fonte em telas menores */
+        line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-effect2 {
+        top: 20%; /* Ajusta a posição vertical para telas menores */
+        left: 50%; /* Ajusta a posição horizontal */
+        transform: translate(-50%, -20%); /* Centraliza horizontalmente e ajusta verticalmente */
+    }
+    
+    .typing-effect2 h1 {
+        font-size: 2em; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+        line-height: 1.2; /* Ajusta a altura da linha */
+    }
+}
+
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -231,7 +362,6 @@ main {
     from, to { border-color: transparent; }
     50% { border-color: #fff; }
 }
-
 
 .content-section {
     padding: 50px;
@@ -470,6 +600,114 @@ main {
     width: 80%;
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .soft-box1 {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 60%; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 50%;
+        font-size: 0.90em;
+        left: 110px;
+        top: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .soft-box1 {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .soft-box2 {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 80px; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 300px;
+        font-size: 0.90em;
+        left: 160px;
+        top: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .soft-box2 {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .soft-box3 {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 100px; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 300px;
+        font-size: 0.90em;
+        left: 250px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .soft-box3 {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .soft-box4 {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 50px; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 200px;
+        font-size: 0.90em;
+        left: 300px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .soft-box4 {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .us-box {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 80px; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 200px;
+        font-size: 0.90em;
+        left: 120px;
+        top: 105px;
+    }
+}
+
+@media (max-width: 480px) {
+    .us-box {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+
 /* Estilo do footer */
 footer {
     background-color: #000000;
@@ -483,7 +721,7 @@ footer {
 .plans-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px;
 }
 
@@ -545,6 +783,7 @@ footer {
     .plan-box {
         max-width: 100%;
         margin: 10px 0; /* Ajuste margem para dispositivos móveis */
+    
     }
 }
 
@@ -566,6 +805,45 @@ footer {
     display: block; /* Remove espaço abaixo do vídeo */
 }
 
+
+/* Caixa de texto sobre o vídeo */
+.mark-box {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 80%; /* Largura máxima de 80% da viewport */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 50%;
+}
+
+/* Media Queries para Responsividade */
+
+/* Dispositivos com largura máxima de 768px (tablets e abaixo) */
+@media (max-width: 768px) {
+    .mark-box {
+        width: 70%; /* Ajusta a largura para 70% */
+        font-size: 1.2em; /* Diminui o tamanho da fonte */
+        padding: 15px; /* Reduz o padding */
+    }
+}
+
+/* Dispositivos com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    .mark-box {
+        width: 90%; /* Ajusta a largura para 90% */
+        font-size: 1em; /* Diminui o tamanho da fonte */
+        padding: 10px; /* Reduz o padding */
+    }
+}
+
 /* Caixa de texto sobre o vídeo */
 .mark-box {
     position: absolute;
@@ -579,7 +857,31 @@ footer {
     border-radius: 10px;
     font-size: 1.5em;
     text-align: center;
-    max-width: 80%;
+    max-width: 50%;
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-    width: 50%;
+    width: 60%;
 }
+
+/* Media Queries para Responsividade */
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .mark-box {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 15px auto; /* Ajusta a margem para telas menores */
+        max-width: 300px; /* Aumenta a largura máxima para caber melhor na tela */
+        width: 250px;
+        font-size: 0.90em;
+        left: 140px;
+        top: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mark-box {
+        padding: 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+        margin: 10px auto; /* Ajusta a margem para telas muito pequenas */
+        max-width: 95%; /* Ajusta a largura máxima para telas muito pequenas */
+    }
+}
+
+
