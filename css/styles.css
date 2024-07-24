@@ -1,0 +1,585 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000000;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    
+    
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1009e0;
+}
+
+main {
+    flex: 1;
+    background-color: #000000;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* Estilo para a seção de serviços */
+.services-section {
+    padding: 50px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.service-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo transparente */
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px auto; /* Centraliza a caixa e adiciona margem */
+    color: blue; /* Texto azul */
+    font-size: 1.2em; /* Texto maior */
+}
+
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section label {
+    margin: 10px 0 5px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* Alterado para combinar com o fundo escuro */
+    color: #fff; /* Texto branco para contraste */
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 30px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-image {
+        height: auto;
+    }
+}
+
+/*BOTÃO CHAT*/
+.chat-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.chat-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.software-button {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.software-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.marketing-button {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.marketing-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.typing-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.typing-effect h1 {
+    font-size: 4em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) forwards; /* Alterado para remover o cursor */
+}
+
+.typing-effect1 {
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#ff9204
+}
+
+.typing-effect1 h1 {
+    font-size: 4em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) forwards; /* Alterado para remover o cursor */
+}
+
+.typing-effect2 {
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ff0040;
+}
+
+.typing-effect2 h1 {
+    font-size: 4em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) forwards; /* Alterado para remover o cursor */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+
+.content-section {
+    padding: 50px;
+    background-color: #111;
+    text-align: center;
+}
+
+.services-section,
+.contact-section {
+    margin-bottom: 50px;
+}
+
+.service {
+    margin: 20px 0;
+}
+
+.contact-us-button {
+    padding: 10px;
+    border: 2px solid green;
+    background-color: green;
+    color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none; /* Remove o sublinhado do link */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+.contact-us-button:hover,
+.contact-us-button:focus {
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse ou focar */
+}
+
+.contact-us-button1 {
+    padding: 10px;
+    border: 2px solid rgb(255, 119, 0);
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none; /* Remove o sublinhado do link */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+.contact-us-button1:hover,
+.contact-us-button1:focus {
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse ou focar */
+}
+
+.contact-us-button2 {
+    padding: 10px;
+    border: 2px solid rgb(255, 0, 72);
+    background-color: rgb(255, 0, 72);
+    color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none; /* Remove o sublinhado do link */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+.contact-us-button2:hover,
+.contact-us-button2:focus {
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse ou focar */
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.about-section {
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-title {
+    position: relative;
+    left: -100%;
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    from { left: -100%; }
+    to { left: 0; }
+}
+
+/* Estilo para a seçãous */
+
+.us {
+    position: relative;
+    width: 98.60vw; /* Garante que a seção ocupe a largura total da tela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Garante que o vídeo não saia da área visível */
+    left: 0;
+}
+
+/* Estilo do vídeo dentro da seção */
+.us-vedeo {
+    width: 100vw; /* Garante que o vídeo ocupe toda a largura da viewport */
+    height: 100%; /* Define a altura do vídeo para 100% da altura da viewport */
+    object-fit: cover; /* Faz com que o vídeo cubra a área sem distorcer */
+    display: block; /* Remove espaço abaixo do vídeo */
+}
+
+/* Caixa de texto sobre o vídeo */
+.us-box {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 40%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 60%;
+}
+
+
+
+/* Seção para os vídeos */
+.soft {
+    position: relative;
+    width: 98.60vw; /* Garante que a seção ocupe a largura total da tela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Garante que o vídeo não saia da área visível */
+    left: -50px;
+}
+
+/* Estilo do vídeo dentro da seção */
+.soft-vedeo {
+    width: 100vw; /* Garante que o vídeo ocupe toda a largura da viewport */
+    height: 100%; /* Define a altura do vídeo para 100% da altura da viewport */
+    object-fit: cover; /* Faz com que o vídeo cubra a área sem distorcer */
+    display: block; /* Remove espaço abaixo do vídeo */
+}
+
+/* Caixa de texto sobre o vídeo */
+.soft-box1 {
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 40%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 60%;
+}
+
+
+.soft-box2 {
+    position: absolute;
+    top: 60%;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 60%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 70%;
+}
+
+.soft-box3 {
+    position: absolute;
+    top: 50%;
+    left: 950px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 45%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 60%;
+}
+
+.soft-box4 {
+    position: absolute;
+    top: 50%;
+    left: 960px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 45%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 80%;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Estilo para a seção de planos */
+.plans-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Estilo para as caixas de planos */
+.plan-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+    max-width: 24%; /* Define a largura máxima das caixas */
+    margin: 10px; /* Margem ao redor das caixas */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    text-align: center;
+}
+
+/* Estilo para a lista de características */
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.checkmark {
+    color: green; /* Cor do ícone de visto */
+    margin-right: 10px;
+}
+
+/* Estilo para o preço */
+.price {
+    font-size: 1.5em;
+    color: #22e009; /* Cor RGB para o preço */
+    margin: 20px 0;
+}
+
+/* Estilo para o botão de contratação */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: darkblue;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .plan-box {
+        max-width: 100%;
+        margin: 10px 0; /* Ajuste margem para dispositivos móveis */
+    }
+}
+
+/* Seção para os vídeos Marketing */
+.mark {
+    position: relative;
+    width: 98.60vw; /* Garante que a seção ocupe a largura total da tela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Garante que o vídeo não saia da área visível */
+    left: -50px;
+}
+
+/* Estilo do vídeo dentro da seção */
+.mark-vedeo {
+    width: 100vw; /* Garante que o vídeo ocupe toda a largura da viewport */
+    height: 100%; /* Define a altura do vídeo para 100% da altura da viewport */
+    object-fit: cover; /* Faz com que o vídeo cubra a área sem distorcer */
+    display: block; /* Remove espaço abaixo do vídeo */
+}
+
+/* Caixa de texto sobre o vídeo */
+.mark-box {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    color: #fff; /* Texto branco */
+    padding: 100px;
+    border: 2px solid blue; /* Bordas azuis */
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 80%;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    width: 50%;
+}
